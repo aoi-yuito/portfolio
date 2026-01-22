@@ -155,7 +155,7 @@
             <h4 class="contact-text text-white font-semibold">My address:</h4>
 
             <address class="mt-1 contact-para font-bold text-neutral-400 text-sm not-italic">
-              18/5 Railway Street, Tay House<br>
+              18/5 Railway Street, Bakali House<br>
               In the middle of nowhere.
             </address>
           </div>
