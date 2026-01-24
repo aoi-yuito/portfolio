@@ -1,5 +1,5 @@
 <template>
-    <h1 class="btn-shine">NoomMaster69</h1>
+  <h1 class="btn-shine">NoomMaster69</h1>
 </template>
 
 <style scoped>
@@ -62,5 +62,5 @@
     background-position: 180px;
   }
 }
-
 </style>
+

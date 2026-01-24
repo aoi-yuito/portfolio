@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
-::selection{
-	@apply text-blue-400;
+::selection {
+  @apply text-blue-400;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	overflow-x: hidden;
-	background-color: #101010;
+  overflow-x: hidden;
+  background-color: #101010;
 }
+

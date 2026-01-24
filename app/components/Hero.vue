@@ -1,109 +1,209 @@
 <template>
   <svg style="block-size: 0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-            <filter id="noise-big">
-              <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
-              <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8" />
-            </filter>
-            <filter id="noise-1">
-              <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
-              <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="1.5" />
-            </filter>
-            <filter id="noise-2">
-                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
-                <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" />
-            </filter>
-    
-            <filter id="noise-3">
-                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
-                <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" />
-            </filter>
-        </defs>
+    <defs>
+      <filter id="noise-big">
+        <feTurbulence
+          id="turbulence"
+          baseFrequency="0.02"
+          numOctaves="3"
+          result="noise"
+          seed="1"
+        />
+        <feDisplacementMap
+          id="displacement"
+          in="SourceGraphic"
+          in2="noise"
+          scale="8"
+        />
+      </filter>
+      <filter id="noise-1">
+        <feTurbulence
+          id="turbulence"
+          baseFrequency="0.02"
+          numOctaves="3"
+          result="noise"
+          seed="1"
+        />
+        <feDisplacementMap
+          id="displacement"
+          in="SourceGraphic"
+          in2="noise"
+          scale="1.5"
+        />
+      </filter>
+      <filter id="noise-2">
+        <feTurbulence
+          id="turbulence"
+          baseFrequency="0.02"
+          numOctaves="3"
+          result="noise"
+          seed="2"
+        />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" />
+      </filter>
+
+      <filter id="noise-3">
+        <feTurbulence
+          id="turbulence"
+          baseFrequency="0.02"
+          numOctaves="3"
+          result="noise"
+          seed="3"
+        />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" />
+      </filter>
+    </defs>
   </svg>
 
-   <header class="bg-transparent z-4">
-      <nav class="relative bg-transparent z-3">
-         <div class="container bg-transparent flex flex-col items-center p-6 mx-auto">
-            <div class="mx-auto bg-transparent text-4xl">
-               <SquiggleTitle title="Aoi Yuito" />
-            </div>
-            <div class="flex font-semibold nav-text truncate items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
-               <a href="#home" class="navigation-link mx-2 border-b-2 border-white text-gray-800 dark:text-gray-200 sm:mx-6">home</a>
-               <a href="#about" class="navigation-link mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6">about</a>
-               <a href="#projects" class="navigation-link mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6">projects</a>
-               <a href="#contact" class="navigation-link mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6">contact</a>
-            </div>
-         </div>
-      </nav>
-      <div class="container z-2 flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-128 lg:py-16 lg:flex-row lg:items-center">
-         <div class="flex relative z-2 flex-col items-center ml-12 w-full lg:flex-row lg:w-1/2">
-            <BGTorus class="absolute xl:-top-70 lg:-top-57.5 md:-top-37 sm:-top-37 -z-1 -left-40" />
-            <div class="pagination flex justify-center order-2 mt-6 lg:mt-0 lg:space-y-3 lg:flex-col">
-               <button class="w-3 h-3 mx-2 bg-gray-500/80 rounded-full lg:mx-0 focus:outline-none"></button>
-               <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"></button>
-               <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"></button>
-               <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"></button>
-            </div>
-            <div class="relative z-10 max-w-lg lg:mx-12 lg:order-2">
-               <!-- <ShimmeringText /> -->
-              <div>
-               <SquiggleText title="Polymorphic Developer" />
-               <p class="mt-4 text-gray-600 z-2 text-[16px] dark:text-gray-300"><ScatteredText class="absolute xl:-top-[2.15rem] xl:-left-9 lg:-top-11 lg:-left-9 md:-left-9 md:-top-9.5 sm:-left-9 sm:-top-[2.4rem]" />ㅤㅤㅤㅤㅤㅤㅤㅤㅤ <span class="hero-description font-extrabold">I'm a versatile developer building solutions across the entire technology stack. Currently expanding from full-stack development into electronics and bare-metal programming while creating indie games and robotics projects.</span></p>
-              </div>
-
-               <div class="mt-6">
-                  <a href="#" class="btn-text px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-gray-600/20 rounded-lg hover:bg-gray-500/40 lg:mx-0 lg:w-auto focus:outline-none">Hire Me Now!</a>
-               </div>
-            </div>
-         </div>
-         <div class="flex z-0 items-center bg-transparent justify-center w-full h-96 lg:w-1/2">
-            <div class="max-w-2xl bg-transparent xl:mr-100 md:mr-18 md:mt-28 lg:-mt-1 lg:mr-60" id="container-webgl"></div>
-            <div class="absolute mt-100 font-bold pathetic invisible xl:visible lg:visible">
-              <h1 class="text-right text-white">This is literally me right now...ㅤㅤ</h1>
-              <h1 class="text-right text-white">Please help me improve my condition!</h1>
-            </div>
-
-            <!-- Image to be used for particles -->
-            <img id="source-image" src="https://images.unsplash.com/photo-1568283661163-c90193fd13f1?q=80&w=2340" crossorigin="anonymous" style="display: none;">
-         </div>
+  <header class="bg-transparent z-4">
+    <nav class="relative bg-transparent z-3">
+      <div
+        class="container bg-transparent flex flex-col items-center p-6 mx-auto"
+      >
+        <div class="mx-auto bg-transparent text-4xl">
+          <SquiggleTitle title="Aoi Yuito" />
+        </div>
+        <div
+          class="flex font-semibold nav-text truncate items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300"
+        >
+          <a
+            href="#home"
+            class="navigation-link mx-2 border-b-2 border-white text-gray-800 dark:text-gray-200 sm:mx-6"
+            >home</a
+          >
+          <a
+            href="#about"
+            class="navigation-link mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6"
+            >about</a
+          >
+          <a
+            href="#projects"
+            class="navigation-link mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6"
+            >projects</a
+          >
+          <a
+            href="#contact"
+            class="navigation-link mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6"
+            >contact</a
+          >
+        </div>
       </div>
-   </header>
+    </nav>
+    <div
+      class="container z-2 flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-128 lg:py-16 lg:flex-row lg:items-center"
+    >
+      <div
+        class="flex relative z-2 flex-col items-center ml-12 w-full lg:flex-row lg:w-1/2"
+      >
+        <BGTorus
+          class="absolute xl:-top-70 lg:-top-57.5 md:-top-37 sm:-top-37 -z-1 -left-40"
+        />
+        <div
+          class="pagination flex justify-center order-2 mt-6 lg:mt-0 lg:space-y-3 lg:flex-col"
+        >
+          <button
+            class="w-3 h-3 mx-2 bg-gray-500/80 rounded-full lg:mx-0 focus:outline-none"
+          ></button>
+          <button
+            class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"
+          ></button>
+          <button
+            class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"
+          ></button>
+          <button
+            class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"
+          ></button>
+        </div>
+        <div class="relative z-10 max-w-lg lg:mx-12 lg:order-2">
+          <!-- <ShimmeringText /> -->
+          <div>
+            <SquiggleText title="Polymorphic Developer" />
+            <p class="mt-4 text-gray-600 z-2 text-[16px] dark:text-gray-300">
+              <ScatteredText
+                class="absolute xl:-top-[2.15rem] xl:-left-9 lg:-top-11 lg:-left-9 md:-left-9 md:-top-9.5 sm:-left-9 sm:-top-[2.4rem]"
+              />ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+              <span class="hero-description font-extrabold"
+                >I'm a versatile developer building solutions across the entire
+                technology stack. Currently expanding from full-stack
+                development into electronics and bare-metal programming while
+                creating indie games and robotics projects.</span
+              >
+            </p>
+          </div>
+
+          <div class="mt-6">
+            <a
+              href="#"
+              class="btn-text px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-gray-600/20 rounded-lg hover:bg-gray-500/40 lg:mx-0 lg:w-auto focus:outline-none"
+              >Hire Me Now!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex z-0 items-center bg-transparent justify-center w-full h-96 lg:w-1/2"
+      >
+        <div
+          class="max-w-2xl bg-transparent xl:mr-100 md:mr-18 md:mt-28 lg:-mt-1 lg:mr-60"
+          id="container-webgl"
+        ></div>
+        <div
+          class="absolute mt-100 font-bold pathetic invisible xl:visible lg:visible"
+        >
+          <h1 class="text-right text-white">
+            This is literally me right now...ㅤㅤ
+          </h1>
+          <h1 class="text-right text-white">
+            Please help me improve my condition!
+          </h1>
+        </div>
+
+        <!-- Image to be used for particles -->
+        <img
+          id="source-image"
+          src="https://images.unsplash.com/photo-1568283661163-c90193fd13f1?q=80&w=2340"
+          crossorigin="anonymous"
+          style="display: none"
+        />
+      </div>
+    </div>
+  </header>
 </template>
 
 <style scoped>
-  .btn-text {
-    font-family: 'Chango', sans-serif;
-  }
+.btn-text {
+  font-family: "Chango", sans-serif;
+}
 
-  .pathetic {
-    font-family: "Macondo", sans-serif;
-    animation: squiggle 0.25s linear infinite;
-  }
+.pathetic {
+  font-family: "Macondo", sans-serif;
+  animation: squiggle 0.25s linear infinite;
+}
 
-  .nav-text {
-    font-family: "Special Elite";
-  }
+.nav-text {
+  font-family: "Special Elite";
+}
 
-  .hero-description {
-    font-family: 'Macondo', sans-serif;
-  }
+.hero-description {
+  font-family: "Macondo", sans-serif;
+}
 
-  #container-webgl {
-      width: 800px;
-      height: 700px;
-  }
+#container-webgl {
+  width: 800px;
+  height: 700px;
+}
 
-  @keyframes squiggle {
-      0% {
-          filter: url("#noise-1");
-      }
-      33% {
-        filter: url("#noise-2");
-      }
-      66% {
-        filter: url("#noise-3");
-      }
+@keyframes squiggle {
+  0% {
+    filter: url("#noise-1");
   }
+  33% {
+    filter: url("#noise-2");
+  }
+  66% {
+    filter: url("#noise-3");
+  }
+}
 </style>
 
 <script>
@@ -369,546 +469,567 @@ onNuxtReady(() => {
   //const RenderPass = await import("three/examples/jsm/postprocessing/RenderPass.js");
   //const UnrealBloomPass = await import("three/examples/jsm/postprocessing/UnrealBloomPass.js");
 
-  if (process.client) { // Nuxt specific way to check
+  if (process.client) {
+    // Nuxt specific way to check
     class App {
-  constructor() {
-    this.container = document.getElementById("container-webgl");
-
-    this.camera = null;
-    this.scene = null;
-    this.renderer = null;
-    this.composer = null;
-
-    this.width = window.innerWidth;
-    this.height = window.innerHeight;
-    //this.width = 800;
-    //this.height = 700;
-    this.mouse = new THREE.Vector2(0.5, 0.5); // Center of screen
-    this.targetMouse = new THREE.Vector2(0.5, 0.5); // For smooth mouse movement
-    this.mouseVelocity = new THREE.Vector2(0, 0);
-    this.lastMouse = new THREE.Vector2(0.5, 0.5);
-    this.mouseSpeed = 0;
-
-    this.image = document.getElementById("source-image");
-    this.imageTexture = null;
-    this.imageWidth = 320;
-    this.imageHeight = 180;
-    this.numPoints = this.imageWidth * this.imageHeight;
-    this.numVisiblePoints = 0;
-    this.threshold = 34;
-
-    this.touchCanvas = null;
-    this.touchContext = null;
-    this.touchTexture = null;
-
-    this.time = 0;
-    this.isRunning = true;
-    this.isMouseMoving = false;
-    this.mouseMovingTimeout = null;
-
-    //this.stats = new Stats(); ----------------------------------
-    //this.stats.showPanel(0); ----------------------------------
-    //this.container.appendChild(this.stats.dom);   ----------------------------------
-
-    this.gui = null;
-    this.guiParams = {
-      particleSize: 1.0,
-      randomness: 0.6, // Reduced for more subtle effect
-      depth: 3.0,
-      mouseSize: 80, // Increased for wider influence
-      mouseForce: 0.8, // Reduced for subtlety
-      mouseSmoothing: 0.12, // Smoother movement
-      idleMovement: 0.4, // Subtle movement when idle
-      idleSpeed: 2,
-      idleIntensity: 0.8,
-      particleSpring: 0.7, // Spring-like behavior
-      glowStrength: 0.3, // Subtle glow effect
-      colorVariation: 0.15, // Subtle color variation
-      fadeSpeed: 0.08, // Slower fade for smoother trails
-      debug: false
-    };
-
-    this.init();
-  }
-
-  init() {
-    this.initRenderer();
-    this.initScene();
-    this.initCamera();
-    this.initLights();
-    this.initPostprocessing();
-    this.loadTexture();
-    this.initGUI();
-    this.initTouchTexture();
-
-    this.addListeners();
-    this.animate();
-  }
-
-  initRenderer() {
-    this.renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true});
-    this.renderer.setClearColor(0x000000, 0);
-    this.renderer.setSize(this.width, this.height);
-    this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.container.appendChild(this.renderer.domElement);
-  }
-
-  initScene() {
-    this.scene = new THREE.Scene();
-    //this.scene.background = new THREE.Color("#101010");
-    this.scene.background = null;
-  }
-
-  initCamera() {
-    const fov = 45;
-    const aspect = this.width / this.height;
-    const near = 1;
-    const far = 1000;
-
-    this.camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this.camera.position.set(0, 0, 300);
-    this.camera.position.z -= 50; 
-  }
-
-  initLights() {
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1);
-    this.scene.add(ambientLight);
-  }
-
-  initPostprocessing() {
-    this.composer = new EffectComposer(this.renderer);
-
-    const renderPass = new RenderPass(this.scene, this.camera);
-    this.composer.addPass(renderPass);
-
-    const bloomPass = new UnrealBloomPass(
-      new THREE.Vector2(this.width, this.height),
-      1.2, // strength (reduced for subtlety)
-      0.5, // radius (increased for smoother bloom)
-      0.85 // threshold
-    );
-    //this.composer.addPass(bloomPass);
-  }
-
-  initGUI() {
-    this.gui = new GUI();
-    this.gui.hide();
-    this.gui
-      .add(this.guiParams, "particleSize", 0.1, 3.0)
-      .name("Particle Size");
-    this.gui.add(this.guiParams, "randomness", 0.0, 5.0).name("Randomness");
-    this.gui.add(this.guiParams, "depth", 1.0, 10.0).name("Depth");
-    this.gui.add(this.guiParams, "mouseSize", 20, 150).name("Mouse Radius");
-    this.gui.add(this.guiParams, "mouseForce", 0.1, 3.0).name("Mouse Force");
-    this.gui
-      .add(this.guiParams, "mouseSmoothing", 0.01, 0.5)
-      .name("Mouse Smoothing");
-
-    // New parameters
-    const advancedFolder = this.gui.addFolder("Advanced");
-    advancedFolder
-      .add(this.guiParams, "idleMovement", 0.0, 1.0)
-      .name("Idle Movement");
-    advancedFolder
-      .add(this.guiParams, "idleSpeed", 0.1, 2.0)
-      .name("Idle Speed");
-    advancedFolder
-      .add(this.guiParams, "idleIntensity", 0.1, 2.0)
-      .name("Idle Intensity");
-    advancedFolder
-      .add(this.guiParams, "particleSpring", 0.1, 2.0)
-      .name("Spring Effect");
-    advancedFolder
-      .add(this.guiParams, "glowStrength", 0.0, 1.0)
-      .name("Glow Strength");
-    advancedFolder
-      .add(this.guiParams, "colorVariation", 0.0, 0.5)
-      .name("Color Variation");
-    advancedFolder
-      .add(this.guiParams, "fadeSpeed", 0.01, 0.3)
-      .name("Fade Speed");
-
-    this.gui.add(this.guiParams, "debug").name("Debug Mode");
-  }
-
-  loadTexture() {
-    this.image.onload = () => {
-      this.imageTexture = new THREE.Texture(this.image);
-      this.imageTexture.needsUpdate = true;
-      this.initParticles();
-    };
-
-    // If image is already loaded
-    if (this.image.complete) {
-      this.imageTexture = new THREE.Texture(this.image);
-      this.imageTexture.needsUpdate = true;
-      this.initParticles();
-    }
-  }
-
-  initTouchTexture() {
-    this.touchCanvas = document.createElement("canvas");
-    this.touchCanvas.width = this.imageWidth;
-    this.touchCanvas.height = this.imageHeight;
-    this.touchContext = this.touchCanvas.getContext("2d");
-
-    // Create grayscale image
-    this.touchContext.fillStyle = "black";
-    this.touchContext.fillRect(0, 0, this.imageWidth, this.imageHeight);
-
-    // Create texture
-    this.touchTexture = new THREE.Texture(this.touchCanvas);
-    this.touchTexture.minFilter = THREE.LinearFilter;
-    this.touchTexture.magFilter = THREE.LinearFilter;
-    this.touchTexture.needsUpdate = true;
-
-    // Debug: Add canvas to body to see what's happening
-    if (this.guiParams.debug) {
-      this.touchCanvas.style.position = "absolute";
-      this.touchCanvas.style.top = "0";
-      this.touchCanvas.style.left = "0";
-      this.touchCanvas.style.zIndex = "9999";
-      this.touchCanvas.style.border = "1px solid red";
-      this.touchCanvas.style.width = "320px";
-      this.touchCanvas.style.height = "180px";
-      document.body.appendChild(this.touchCanvas);
-    }
-  }
-
-  initParticles() {
-    // Filter image pixels to keep only those above threshold
-    let originalColors;
-    let numVisible = 0;
-    const imgData = this.getImageData();
-    originalColors = Float32Array.from(imgData.data);
-
-    for (let i = 0; i < this.numPoints; i++) {
-      if (originalColors[i * 4] > this.threshold) numVisible++;
-    }
-
-    this.numVisiblePoints = numVisible;
-
-    // Create geometry
-    const geometry = new THREE.InstancedBufferGeometry();
-
-    // Positions (vertices of quad)
-    const positions = new THREE.BufferAttribute(new Float32Array(4 * 3), 3);
-    positions.setXYZ(0, -0.5, 0.5, 0.0);
-    positions.setXYZ(1, 0.5, 0.5, 0.0);
-    positions.setXYZ(2, -0.5, -0.5, 0.0);
-    positions.setXYZ(3, 0.5, -0.5, 0.0);
-    geometry.setAttribute("position", positions);
-
-    // UVs
-    const uvs = new THREE.BufferAttribute(new Float32Array(4 * 2), 2);
-    uvs.setXY(0, 0.0, 0.0);
-    uvs.setXY(1, 1.0, 0.0);
-    uvs.setXY(2, 0.0, 1.0);
-    uvs.setXY(3, 1.0, 1.0);
-    geometry.setAttribute("uv", uvs);
-
-    // Index
-    geometry.setIndex(
-      new THREE.BufferAttribute(new Uint16Array([0, 2, 1, 2, 3, 1]), 1)
-    );
-
-    // Instanced attributes
-    const indices = new Uint16Array(this.numVisiblePoints);
-    const offsets = new Float32Array(this.numVisiblePoints * 3);
-    const angles = new Float32Array(this.numVisiblePoints);
-
-    for (let i = 0, j = 0; i < this.numPoints; i++) {
-      if (originalColors[i * 4] <= this.threshold) continue;
-
-      offsets[j * 3 + 0] = i % this.imageWidth;
-      offsets[j * 3 + 1] = Math.floor(i / this.imageWidth);
-      offsets[j * 3 + 2] = 0;
-
-      indices[j] = i;
-      angles[j] = Math.random() * Math.PI;
-
-      j++;
-    }
-
-    geometry.setAttribute(
-      "pindex",
-      new THREE.InstancedBufferAttribute(indices, 1, false)
-    );
-    geometry.setAttribute(
-      "offset",
-      new THREE.InstancedBufferAttribute(offsets, 3, false)
-    );
-    geometry.setAttribute(
-      "angle",
-      new THREE.InstancedBufferAttribute(angles, 1, false)
-    );
-
-    // Material
-    const uniforms = {
-      uTime: { value: 0 },
-      uRandom: { value: this.guiParams.randomness },
-      uDepth: { value: this.guiParams.depth },
-      uSize: { value: this.guiParams.particleSize },
-      uTextureSize: {
-        value: new THREE.Vector2(this.imageWidth, this.imageHeight)
-      },
-      uTexture: { value: this.imageTexture },
-      uTouch: { value: this.touchTexture },
-      uMouse: { value: new THREE.Vector2(0.5, 0.5) },
-      uMouseSize: { value: this.guiParams.mouseSize },
-      uMouseForce: { value: this.guiParams.mouseForce },
-      uEasingFactor: { value: 0.2 },
-      uIdleMovement: { value: this.guiParams.idleMovement },
-      uIdleSpeed: { value: this.guiParams.idleSpeed },
-      uIdleIntensity: { value: this.guiParams.idleIntensity },
-      uParticleSpring: { value: this.guiParams.particleSpring },
-      uGlowStrength: { value: this.guiParams.glowStrength },
-      uColorVariation: { value: this.guiParams.colorVariation }
-    };
-
-    const material = new THREE.RawShaderMaterial({
-      uniforms,
-      vertexShader,
-      fragmentShader,
-      depthTest: false,
-      transparent: true
-    });
-
-    // Create mesh
-    this.particles = new THREE.Mesh(geometry, material);
-    this.scene.add(this.particles);
-
-    // Center the particles
-    this.particles.position.x = -this.imageWidth / 2;
-    this.particles.position.y = -this.imageHeight / 2;
-  }
-
-  getImageData() {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-
-    canvas.width = this.imageWidth;
-    canvas.height = this.imageHeight;
-    ctx.scale(1, -1); // Flip y
-    ctx.drawImage(this.image, 0, 0, this.imageWidth, this.imageHeight * -1);
-
-    return ctx.getImageData(0, 0, canvas.width, canvas.height);
-  }
-
-  updateTouchTexture() {
-    // Clear canvas with fade effect for smoother trails
-    this.touchContext.fillStyle = `rgba(0, 0, 0, ${this.guiParams.fadeSpeed})`;
-    this.touchContext.fillRect(0, 0, this.imageWidth, this.imageHeight);
-
-    // Draw mouse position with velocity-based intensity
-    const x = this.mouse.x * this.imageWidth;
-    const y = this.mouse.y * this.imageHeight;
-    const size = this.guiParams.mouseSize;
-
-    // Calculate intensity based on mouse speed
-    const speedFactor = Math.min(1, this.mouseSpeed * 15);
-    const intensity = this.isMouseMoving ? 0.7 + speedFactor * 0.3 : 0.5;
-
-    // Create gradient with more natural falloff
-    const gradient = this.touchContext.createRadialGradient(
-      x,
-      y,
-      0,
-      x,
-      y,
-      size
-    );
-
-    gradient.addColorStop(0, `rgba(255, 255, 255, ${intensity})`);
-    gradient.addColorStop(0.3, `rgba(255, 255, 255, ${intensity * 0.6})`);
-    gradient.addColorStop(0.7, `rgba(255, 255, 255, ${intensity * 0.2})`);
-    gradient.addColorStop(1, "rgba(255, 255, 255, 0.0)");
-
-    this.touchContext.fillStyle = gradient;
-    this.touchContext.beginPath();
-    this.touchContext.arc(x, y, size, 0, Math.PI * 2);
-    this.touchContext.fill();
-
-    // Add a smaller, more intense center for better definition
-    if (this.isMouseMoving) {
-      const centerGradient = this.touchContext.createRadialGradient(
-        x,
-        y,
-        0,
-        x,
-        y,
-        size * 0.3
-      );
-
-      centerGradient.addColorStop(0, `rgba(255, 255, 255, ${intensity * 1.2})`);
-      centerGradient.addColorStop(1, "rgba(255, 255, 255, 0.0)");
-
-      this.touchContext.fillStyle = centerGradient;
-      this.touchContext.beginPath();
-      this.touchContext.arc(x, y, size * 0.3, 0, Math.PI * 2);
-      this.touchContext.fill();
-    }
-
-    this.touchTexture.needsUpdate = true;
-  }
-
-  animate() {
-    if (!this.isRunning) return;
-
-    //this.stats.begin(); --------------------------------------------
-    this.time += 0.05;
-
-    // Calculate mouse velocity
-    this.mouseVelocity.x = this.targetMouse.x - this.lastMouse.x;
-    this.mouseVelocity.y = this.targetMouse.y - this.lastMouse.y;
-    this.mouseSpeed = Math.sqrt(
-      this.mouseVelocity.x * this.mouseVelocity.x +
-        this.mouseVelocity.y * this.mouseVelocity.y
-    );
-    this.lastMouse.copy(this.targetMouse);
-
-    // Smooth mouse movement with adaptive smoothing
-    // Faster mouse movement = less smoothing for more responsive feel
-    const adaptiveSmoothing =
-      this.guiParams.mouseSmoothing * (1 - Math.min(0.8, this.mouseSpeed * 5));
-    this.mouse.x += (this.targetMouse.x - this.mouse.x) * adaptiveSmoothing;
-    this.mouse.y += (this.targetMouse.y - this.mouse.y) * adaptiveSmoothing;
-
-    // Update touch texture for traditional method
-    this.updateTouchTexture();
-
-    if (this.particles) {
-      // Update uniforms
-      this.particles.material.uniforms.uTime.value = this.time;
-      this.particles.material.uniforms.uRandom.value = this.guiParams.randomness;
-      this.particles.material.uniforms.uDepth.value = this.guiParams.depth;
-      this.particles.material.uniforms.uSize.value = this.guiParams.particleSize;
-
-      // Direct mouse uniforms
-      this.particles.material.uniforms.uMouse.value.copy(this.mouse);
-      this.particles.material.uniforms.uMouseSize.value = this.guiParams.mouseSize;
-      this.particles.material.uniforms.uMouseForce.value = this.guiParams.mouseForce;
-      this.particles.material.uniforms.uIdleMovement.value = this.guiParams.idleMovement;
-      this.particles.material.uniforms.uIdleSpeed.value = this.guiParams.idleSpeed;
-      this.particles.material.uniforms.uIdleIntensity.value = this.guiParams.idleIntensity;
-      this.particles.material.uniforms.uParticleSpring.value = this.guiParams.particleSpring;
-      this.particles.material.uniforms.uGlowStrength.value = this.guiParams.glowStrength;
-      this.particles.material.uniforms.uColorVariation.value = this.guiParams.colorVariation;
-    }
-
-    this.composer.render();
-    //this.stats.end(); -------------------------------------
-
-    window.requestAnimationFrame(this.animate.bind(this));
-  }
-
-  addListeners() {
-    window.addEventListener("resize", this.onResize.bind(this));
-    //window.addEventListener("mousemove", this.onMouseMove.bind(this)); // =========== remove this if you want the interactive hover effects ==============
-    window.addEventListener("touchmove", this.onTouchMove.bind(this), {
-      passive: false
-    });
-
-    // Track when mouse is moving vs idle
-    window.addEventListener("mousemove", () => {
-      this.isMouseMoving = true;
-
-      // Clear any existing timeout
-      if (this.mouseMovingTimeout) {
-        clearTimeout(this.mouseMovingTimeout);
+      constructor() {
+        this.container = document.getElementById("container-webgl");
+
+        this.camera = null;
+        this.scene = null;
+        this.renderer = null;
+        this.composer = null;
+
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+        //this.width = 800;
+        //this.height = 700;
+        this.mouse = new THREE.Vector2(0.5, 0.5); // Center of screen
+        this.targetMouse = new THREE.Vector2(0.5, 0.5); // For smooth mouse movement
+        this.mouseVelocity = new THREE.Vector2(0, 0);
+        this.lastMouse = new THREE.Vector2(0.5, 0.5);
+        this.mouseSpeed = 0;
+
+        this.image = document.getElementById("source-image");
+        this.imageTexture = null;
+        this.imageWidth = 320;
+        this.imageHeight = 180;
+        this.numPoints = this.imageWidth * this.imageHeight;
+        this.numVisiblePoints = 0;
+        this.threshold = 34;
+
+        this.touchCanvas = null;
+        this.touchContext = null;
+        this.touchTexture = null;
+
+        this.time = 0;
+        this.isRunning = true;
+        this.isMouseMoving = false;
+        this.mouseMovingTimeout = null;
+
+        //this.stats = new Stats(); ----------------------------------
+        //this.stats.showPanel(0); ----------------------------------
+        //this.container.appendChild(this.stats.dom);   ----------------------------------
+
+        this.gui = null;
+        this.guiParams = {
+          particleSize: 1.0,
+          randomness: 0.6, // Reduced for more subtle effect
+          depth: 3.0,
+          mouseSize: 80, // Increased for wider influence
+          mouseForce: 0.8, // Reduced for subtlety
+          mouseSmoothing: 0.12, // Smoother movement
+          idleMovement: 0.4, // Subtle movement when idle
+          idleSpeed: 2,
+          idleIntensity: 0.8,
+          particleSpring: 0.7, // Spring-like behavior
+          glowStrength: 0.3, // Subtle glow effect
+          colorVariation: 0.15, // Subtle color variation
+          fadeSpeed: 0.08, // Slower fade for smoother trails
+          debug: false,
+        };
+
+        this.init();
       }
 
-      // Set timeout to detect when mouse stops moving
-      this.mouseMovingTimeout = setTimeout(() => {
-        this.isMouseMoving = false;
-      }, 100);
-    });
+      init() {
+        this.initRenderer();
+        this.initScene();
+        this.initCamera();
+        this.initLights();
+        this.initPostprocessing();
+        this.loadTexture();
+        this.initGUI();
+        this.initTouchTexture();
 
-    // Debug: Toggle debug view when GUI changes
-    if (this.gui) {
-      this.gui.__controllers.forEach((controller) => {
-        if (controller.property === "debug") {
-          controller.onChange((value) => {
-            if (value && this.touchCanvas) {
-              document.body.appendChild(this.touchCanvas);
-              this.touchCanvas.style.position = "absolute";
-              this.touchCanvas.style.top = "0";
-              this.touchCanvas.style.left = "0";
-              this.touchCanvas.style.zIndex = "9999";
-              this.touchCanvas.style.border = "1px solid red";
-              this.touchCanvas.style.width = "320px";
-              this.touchCanvas.style.height = "180px";
-            } else if (this.touchCanvas && this.touchCanvas.parentNode) {
-              document.body.removeChild(this.touchCanvas);
+        this.addListeners();
+        this.animate();
+      }
+
+      initRenderer() {
+        this.renderer = new THREE.WebGLRenderer({
+          alpha: true,
+          antialias: true,
+        });
+        this.renderer.setClearColor(0x000000, 0);
+        this.renderer.setSize(this.width, this.height);
+        this.renderer.setPixelRatio(window.devicePixelRatio);
+        this.container.appendChild(this.renderer.domElement);
+      }
+
+      initScene() {
+        this.scene = new THREE.Scene();
+        //this.scene.background = new THREE.Color("#101010");
+        this.scene.background = null;
+      }
+
+      initCamera() {
+        const fov = 45;
+        const aspect = this.width / this.height;
+        const near = 1;
+        const far = 1000;
+
+        this.camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+        this.camera.position.set(0, 0, 300);
+        this.camera.position.z -= 50;
+      }
+
+      initLights() {
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+        this.scene.add(ambientLight);
+      }
+
+      initPostprocessing() {
+        this.composer = new EffectComposer(this.renderer);
+
+        const renderPass = new RenderPass(this.scene, this.camera);
+        this.composer.addPass(renderPass);
+
+        const bloomPass = new UnrealBloomPass(
+          new THREE.Vector2(this.width, this.height),
+          1.2, // strength (reduced for subtlety)
+          0.5, // radius (increased for smoother bloom)
+          0.85, // threshold
+        );
+        //this.composer.addPass(bloomPass);
+      }
+
+      initGUI() {
+        this.gui = new GUI();
+        this.gui.hide();
+        this.gui
+          .add(this.guiParams, "particleSize", 0.1, 3.0)
+          .name("Particle Size");
+        this.gui.add(this.guiParams, "randomness", 0.0, 5.0).name("Randomness");
+        this.gui.add(this.guiParams, "depth", 1.0, 10.0).name("Depth");
+        this.gui.add(this.guiParams, "mouseSize", 20, 150).name("Mouse Radius");
+        this.gui
+          .add(this.guiParams, "mouseForce", 0.1, 3.0)
+          .name("Mouse Force");
+        this.gui
+          .add(this.guiParams, "mouseSmoothing", 0.01, 0.5)
+          .name("Mouse Smoothing");
+
+        // New parameters
+        const advancedFolder = this.gui.addFolder("Advanced");
+        advancedFolder
+          .add(this.guiParams, "idleMovement", 0.0, 1.0)
+          .name("Idle Movement");
+        advancedFolder
+          .add(this.guiParams, "idleSpeed", 0.1, 2.0)
+          .name("Idle Speed");
+        advancedFolder
+          .add(this.guiParams, "idleIntensity", 0.1, 2.0)
+          .name("Idle Intensity");
+        advancedFolder
+          .add(this.guiParams, "particleSpring", 0.1, 2.0)
+          .name("Spring Effect");
+        advancedFolder
+          .add(this.guiParams, "glowStrength", 0.0, 1.0)
+          .name("Glow Strength");
+        advancedFolder
+          .add(this.guiParams, "colorVariation", 0.0, 0.5)
+          .name("Color Variation");
+        advancedFolder
+          .add(this.guiParams, "fadeSpeed", 0.01, 0.3)
+          .name("Fade Speed");
+
+        this.gui.add(this.guiParams, "debug").name("Debug Mode");
+      }
+
+      loadTexture() {
+        this.image.onload = () => {
+          this.imageTexture = new THREE.Texture(this.image);
+          this.imageTexture.needsUpdate = true;
+          this.initParticles();
+        };
+
+        // If image is already loaded
+        if (this.image.complete) {
+          this.imageTexture = new THREE.Texture(this.image);
+          this.imageTexture.needsUpdate = true;
+          this.initParticles();
+        }
+      }
+
+      initTouchTexture() {
+        this.touchCanvas = document.createElement("canvas");
+        this.touchCanvas.width = this.imageWidth;
+        this.touchCanvas.height = this.imageHeight;
+        this.touchContext = this.touchCanvas.getContext("2d");
+
+        // Create grayscale image
+        this.touchContext.fillStyle = "black";
+        this.touchContext.fillRect(0, 0, this.imageWidth, this.imageHeight);
+
+        // Create texture
+        this.touchTexture = new THREE.Texture(this.touchCanvas);
+        this.touchTexture.minFilter = THREE.LinearFilter;
+        this.touchTexture.magFilter = THREE.LinearFilter;
+        this.touchTexture.needsUpdate = true;
+
+        // Debug: Add canvas to body to see what's happening
+        if (this.guiParams.debug) {
+          this.touchCanvas.style.position = "absolute";
+          this.touchCanvas.style.top = "0";
+          this.touchCanvas.style.left = "0";
+          this.touchCanvas.style.zIndex = "9999";
+          this.touchCanvas.style.border = "1px solid red";
+          this.touchCanvas.style.width = "320px";
+          this.touchCanvas.style.height = "180px";
+          document.body.appendChild(this.touchCanvas);
+        }
+      }
+
+      initParticles() {
+        // Filter image pixels to keep only those above threshold
+        let originalColors;
+        let numVisible = 0;
+        const imgData = this.getImageData();
+        originalColors = Float32Array.from(imgData.data);
+
+        for (let i = 0; i < this.numPoints; i++) {
+          if (originalColors[i * 4] > this.threshold) numVisible++;
+        }
+
+        this.numVisiblePoints = numVisible;
+
+        // Create geometry
+        const geometry = new THREE.InstancedBufferGeometry();
+
+        // Positions (vertices of quad)
+        const positions = new THREE.BufferAttribute(new Float32Array(4 * 3), 3);
+        positions.setXYZ(0, -0.5, 0.5, 0.0);
+        positions.setXYZ(1, 0.5, 0.5, 0.0);
+        positions.setXYZ(2, -0.5, -0.5, 0.0);
+        positions.setXYZ(3, 0.5, -0.5, 0.0);
+        geometry.setAttribute("position", positions);
+
+        // UVs
+        const uvs = new THREE.BufferAttribute(new Float32Array(4 * 2), 2);
+        uvs.setXY(0, 0.0, 0.0);
+        uvs.setXY(1, 1.0, 0.0);
+        uvs.setXY(2, 0.0, 1.0);
+        uvs.setXY(3, 1.0, 1.0);
+        geometry.setAttribute("uv", uvs);
+
+        // Index
+        geometry.setIndex(
+          new THREE.BufferAttribute(new Uint16Array([0, 2, 1, 2, 3, 1]), 1),
+        );
+
+        // Instanced attributes
+        const indices = new Uint16Array(this.numVisiblePoints);
+        const offsets = new Float32Array(this.numVisiblePoints * 3);
+        const angles = new Float32Array(this.numVisiblePoints);
+
+        for (let i = 0, j = 0; i < this.numPoints; i++) {
+          if (originalColors[i * 4] <= this.threshold) continue;
+
+          offsets[j * 3 + 0] = i % this.imageWidth;
+          offsets[j * 3 + 1] = Math.floor(i / this.imageWidth);
+          offsets[j * 3 + 2] = 0;
+
+          indices[j] = i;
+          angles[j] = Math.random() * Math.PI;
+
+          j++;
+        }
+
+        geometry.setAttribute(
+          "pindex",
+          new THREE.InstancedBufferAttribute(indices, 1, false),
+        );
+        geometry.setAttribute(
+          "offset",
+          new THREE.InstancedBufferAttribute(offsets, 3, false),
+        );
+        geometry.setAttribute(
+          "angle",
+          new THREE.InstancedBufferAttribute(angles, 1, false),
+        );
+
+        // Material
+        const uniforms = {
+          uTime: { value: 0 },
+          uRandom: { value: this.guiParams.randomness },
+          uDepth: { value: this.guiParams.depth },
+          uSize: { value: this.guiParams.particleSize },
+          uTextureSize: {
+            value: new THREE.Vector2(this.imageWidth, this.imageHeight),
+          },
+          uTexture: { value: this.imageTexture },
+          uTouch: { value: this.touchTexture },
+          uMouse: { value: new THREE.Vector2(0.5, 0.5) },
+          uMouseSize: { value: this.guiParams.mouseSize },
+          uMouseForce: { value: this.guiParams.mouseForce },
+          uEasingFactor: { value: 0.2 },
+          uIdleMovement: { value: this.guiParams.idleMovement },
+          uIdleSpeed: { value: this.guiParams.idleSpeed },
+          uIdleIntensity: { value: this.guiParams.idleIntensity },
+          uParticleSpring: { value: this.guiParams.particleSpring },
+          uGlowStrength: { value: this.guiParams.glowStrength },
+          uColorVariation: { value: this.guiParams.colorVariation },
+        };
+
+        const material = new THREE.RawShaderMaterial({
+          uniforms,
+          vertexShader,
+          fragmentShader,
+          depthTest: false,
+          transparent: true,
+        });
+
+        // Create mesh
+        this.particles = new THREE.Mesh(geometry, material);
+        this.scene.add(this.particles);
+
+        // Center the particles
+        this.particles.position.x = -this.imageWidth / 2;
+        this.particles.position.y = -this.imageHeight / 2;
+      }
+
+      getImageData() {
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = this.imageWidth;
+        canvas.height = this.imageHeight;
+        ctx.scale(1, -1); // Flip y
+        ctx.drawImage(this.image, 0, 0, this.imageWidth, this.imageHeight * -1);
+
+        return ctx.getImageData(0, 0, canvas.width, canvas.height);
+      }
+
+      updateTouchTexture() {
+        // Clear canvas with fade effect for smoother trails
+        this.touchContext.fillStyle = `rgba(0, 0, 0, ${this.guiParams.fadeSpeed})`;
+        this.touchContext.fillRect(0, 0, this.imageWidth, this.imageHeight);
+
+        // Draw mouse position with velocity-based intensity
+        const x = this.mouse.x * this.imageWidth;
+        const y = this.mouse.y * this.imageHeight;
+        const size = this.guiParams.mouseSize;
+
+        // Calculate intensity based on mouse speed
+        const speedFactor = Math.min(1, this.mouseSpeed * 15);
+        const intensity = this.isMouseMoving ? 0.7 + speedFactor * 0.3 : 0.5;
+
+        // Create gradient with more natural falloff
+        const gradient = this.touchContext.createRadialGradient(
+          x,
+          y,
+          0,
+          x,
+          y,
+          size,
+        );
+
+        gradient.addColorStop(0, `rgba(255, 255, 255, ${intensity})`);
+        gradient.addColorStop(0.3, `rgba(255, 255, 255, ${intensity * 0.6})`);
+        gradient.addColorStop(0.7, `rgba(255, 255, 255, ${intensity * 0.2})`);
+        gradient.addColorStop(1, "rgba(255, 255, 255, 0.0)");
+
+        this.touchContext.fillStyle = gradient;
+        this.touchContext.beginPath();
+        this.touchContext.arc(x, y, size, 0, Math.PI * 2);
+        this.touchContext.fill();
+
+        // Add a smaller, more intense center for better definition
+        if (this.isMouseMoving) {
+          const centerGradient = this.touchContext.createRadialGradient(
+            x,
+            y,
+            0,
+            x,
+            y,
+            size * 0.3,
+          );
+
+          centerGradient.addColorStop(
+            0,
+            `rgba(255, 255, 255, ${intensity * 1.2})`,
+          );
+          centerGradient.addColorStop(1, "rgba(255, 255, 255, 0.0)");
+
+          this.touchContext.fillStyle = centerGradient;
+          this.touchContext.beginPath();
+          this.touchContext.arc(x, y, size * 0.3, 0, Math.PI * 2);
+          this.touchContext.fill();
+        }
+
+        this.touchTexture.needsUpdate = true;
+      }
+
+      animate() {
+        if (!this.isRunning) return;
+
+        //this.stats.begin(); --------------------------------------------
+        this.time += 0.05;
+
+        // Calculate mouse velocity
+        this.mouseVelocity.x = this.targetMouse.x - this.lastMouse.x;
+        this.mouseVelocity.y = this.targetMouse.y - this.lastMouse.y;
+        this.mouseSpeed = Math.sqrt(
+          this.mouseVelocity.x * this.mouseVelocity.x +
+            this.mouseVelocity.y * this.mouseVelocity.y,
+        );
+        this.lastMouse.copy(this.targetMouse);
+
+        // Smooth mouse movement with adaptive smoothing
+        // Faster mouse movement = less smoothing for more responsive feel
+        const adaptiveSmoothing =
+          this.guiParams.mouseSmoothing *
+          (1 - Math.min(0.8, this.mouseSpeed * 5));
+        this.mouse.x += (this.targetMouse.x - this.mouse.x) * adaptiveSmoothing;
+        this.mouse.y += (this.targetMouse.y - this.mouse.y) * adaptiveSmoothing;
+
+        // Update touch texture for traditional method
+        this.updateTouchTexture();
+
+        if (this.particles) {
+          // Update uniforms
+          this.particles.material.uniforms.uTime.value = this.time;
+          this.particles.material.uniforms.uRandom.value =
+            this.guiParams.randomness;
+          this.particles.material.uniforms.uDepth.value = this.guiParams.depth;
+          this.particles.material.uniforms.uSize.value =
+            this.guiParams.particleSize;
+
+          // Direct mouse uniforms
+          this.particles.material.uniforms.uMouse.value.copy(this.mouse);
+          this.particles.material.uniforms.uMouseSize.value =
+            this.guiParams.mouseSize;
+          this.particles.material.uniforms.uMouseForce.value =
+            this.guiParams.mouseForce;
+          this.particles.material.uniforms.uIdleMovement.value =
+            this.guiParams.idleMovement;
+          this.particles.material.uniforms.uIdleSpeed.value =
+            this.guiParams.idleSpeed;
+          this.particles.material.uniforms.uIdleIntensity.value =
+            this.guiParams.idleIntensity;
+          this.particles.material.uniforms.uParticleSpring.value =
+            this.guiParams.particleSpring;
+          this.particles.material.uniforms.uGlowStrength.value =
+            this.guiParams.glowStrength;
+          this.particles.material.uniforms.uColorVariation.value =
+            this.guiParams.colorVariation;
+        }
+
+        this.composer.render();
+        //this.stats.end(); -------------------------------------
+
+        window.requestAnimationFrame(this.animate.bind(this));
+      }
+
+      addListeners() {
+        window.addEventListener("resize", this.onResize.bind(this));
+        //window.addEventListener("mousemove", this.onMouseMove.bind(this)); // =========== remove this if you want the interactive hover effects ==============
+        window.addEventListener("touchmove", this.onTouchMove.bind(this), {
+          passive: false,
+        });
+
+        // Track when mouse is moving vs idle
+        window.addEventListener("mousemove", () => {
+          this.isMouseMoving = true;
+
+          // Clear any existing timeout
+          if (this.mouseMovingTimeout) {
+            clearTimeout(this.mouseMovingTimeout);
+          }
+
+          // Set timeout to detect when mouse stops moving
+          this.mouseMovingTimeout = setTimeout(() => {
+            this.isMouseMoving = false;
+          }, 100);
+        });
+
+        // Debug: Toggle debug view when GUI changes
+        if (this.gui) {
+          this.gui.__controllers.forEach((controller) => {
+            if (controller.property === "debug") {
+              controller.onChange((value) => {
+                if (value && this.touchCanvas) {
+                  document.body.appendChild(this.touchCanvas);
+                  this.touchCanvas.style.position = "absolute";
+                  this.touchCanvas.style.top = "0";
+                  this.touchCanvas.style.left = "0";
+                  this.touchCanvas.style.zIndex = "9999";
+                  this.touchCanvas.style.border = "1px solid red";
+                  this.touchCanvas.style.width = "320px";
+                  this.touchCanvas.style.height = "180px";
+                } else if (this.touchCanvas && this.touchCanvas.parentNode) {
+                  document.body.removeChild(this.touchCanvas);
+                }
+              });
             }
           });
         }
-      });
+      }
+
+      onResize() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+
+        this.camera.aspect = this.width / this.height;
+        this.camera.updateProjectionMatrix();
+
+        this.renderer.setSize(this.width, this.height);
+        this.composer.setSize(this.width, this.height);
+      }
+
+      onMouseMove(e) {
+        const canvasBounds = this.renderer.domElement.getBoundingClientRect();
+
+        // Project onto 3D scene
+        const mouseX =
+          ((e.clientX - canvasBounds.left) / canvasBounds.width) * 2 - 1;
+        const mouseY =
+          -((e.clientY - canvasBounds.top) / canvasBounds.height) * 2 + 1;
+
+        // Create raycaster and set it from camera
+        const raycaster = new THREE.Raycaster();
+        raycaster.setFromCamera(new THREE.Vector2(mouseX, mouseY), this.camera);
+
+        // Define a plane at z=0
+        const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
+
+        // Find intersection point
+        const intersection = new THREE.Vector3();
+        raycaster.ray.intersectPlane(plane, intersection);
+
+        // Convert to image space (0-1)
+        const imgX = (intersection.x + this.imageWidth / 2) / this.imageWidth;
+        const imgY = (intersection.y + this.imageHeight / 2) / this.imageHeight;
+
+        // Update target mouse position
+        this.targetMouse.set(
+          Math.max(0, Math.min(1, imgX)),
+          Math.max(0, Math.min(1, imgY)),
+        );
+
+        // Debug output
+        if (this.guiParams.debug) {
+          console.log(
+            `Mouse: ${this.targetMouse.x.toFixed(2)}, ${this.targetMouse.y.toFixed(
+              2,
+            )}`,
+          );
+        }
+      }
+
+      onTouchMove(e) {
+        e.preventDefault();
+        const touch = e.touches[0];
+        this.onMouseMove(touch);
+      }
     }
-  }
-
-  onResize() {
-    this.width = window.innerWidth;
-    this.height = window.innerHeight;
-
-    this.camera.aspect = this.width / this.height;
-    this.camera.updateProjectionMatrix();
-
-    this.renderer.setSize(this.width, this.height);
-    this.composer.setSize(this.width, this.height);
-  }
-
-  onMouseMove(e) {
-    const canvasBounds = this.renderer.domElement.getBoundingClientRect();
-
-    // Project onto 3D scene
-    const mouseX =
-      ((e.clientX - canvasBounds.left) / canvasBounds.width) * 2 - 1;
-    const mouseY =
-      -((e.clientY - canvasBounds.top) / canvasBounds.height) * 2 + 1;
-
-    // Create raycaster and set it from camera
-    const raycaster = new THREE.Raycaster();
-    raycaster.setFromCamera(new THREE.Vector2(mouseX, mouseY), this.camera);
-
-    // Define a plane at z=0
-    const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
-
-    // Find intersection point
-    const intersection = new THREE.Vector3();
-    raycaster.ray.intersectPlane(plane, intersection);
-
-    // Convert to image space (0-1)
-    const imgX = (intersection.x + this.imageWidth / 2) / this.imageWidth;
-    const imgY = (intersection.y + this.imageHeight / 2) / this.imageHeight;
-
-    // Update target mouse position
-    this.targetMouse.set(
-      Math.max(0, Math.min(1, imgX)),
-      Math.max(0, Math.min(1, imgY))
-    );
-
-    // Debug output
-    if (this.guiParams.debug) {
-      console.log(
-        `Mouse: ${this.targetMouse.x.toFixed(2)}, ${this.targetMouse.y.toFixed(
-          2
-        )}`
-      );
-    }
-  }
-
-  onTouchMove(e) {
-    e.preventDefault();
-    const touch = e.touches[0];
-    this.onMouseMove(touch);
-  }
-}
     // Access window and requestAnimationFrame here
     new App();
     // ... rest of your three.js setup
   } else {
-    console.warn('Three.js component is not running on the client');
+    console.warn("Three.js component is not running on the client");
   }
 });
 </script>
+
