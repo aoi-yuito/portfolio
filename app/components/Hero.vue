@@ -55,7 +55,7 @@
     </defs>
   </svg>
 
-  <header class="bg-transparent z-4">
+  <!-- <header class="bg-transparent z-4">
     <nav class="relative bg-transparent z-3">
       <div
         class="container bg-transparent flex flex-col items-center p-6 mx-auto"
@@ -115,7 +115,7 @@
           ></button>
         </div>
         <div class="relative z-10 max-w-lg lg:mx-12 lg:order-2">
-          <!-- <ShimmeringText /> -->
+          -- <ShimmeringText /> --
           <div>
             <SquiggleText title="Polymorphic Developer" />
             <p class="mt-4 text-gray-600 z-2 text-[16px] dark:text-gray-300">
@@ -158,7 +158,7 @@
           </h1>
         </div>
 
-        <!-- Image to be used for particles -->
+        -- Image to be used for particles --
         <img
           id="source-image"
           src="https://images.unsplash.com/photo-1568283661163-c90193fd13f1?q=80&w=2340"
@@ -167,7 +167,55 @@
         />
       </div>
     </div>
-  </header>
+  </header> -->
+
+<header class="bg-transparent">
+    <nav class="bg-transparent">
+        <div class="container flex flex-col items-center p-6 mx-auto">
+            <div class="mx-auto">
+                <SquiggleTitle title="Aoi Yuito" />
+            </div>
+
+            <div class="flex font-semibold nav-text truncate items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
+                <a href="#home" class="mx-2 border-b-2 border-white text-gray-800 dark:text-gray-200 sm:mx-6">home</a>
+
+                <a href="#about" class="mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6">about</a>
+
+                <a href="#projects" class="mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6">projects</a>
+
+                <a href="#contact" class="mx-2 border-b-2 border-dashed hover:text-gray-800 hover:border-solid dark:hover:text-gray-200 hover:border-white sm:mx-6">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+        <div class="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
+            <div class="flex justify-center order-2 mt-6 lg:mt-0 lg:space-y-3 lg:flex-col">
+                <button class="w-3 h-3 mx-2 bg-gray-500/80 rounded-full lg:mx-0 focus:outline-none"></button>
+                <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"></button>
+                <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"></button>
+                <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-gray-500/80"></button>
+            </div>
+
+            <div class="max-w-lg lg:mx-12 lg:order-2">
+                <SquiggleText title="Polymorphic Developer" />
+                <p class="hero-description font-extrabold mt-4 text-gray-600 dark:text-gray-300">
+                  I'm a <span class="font-extrabold text-blue-200">versatile developer</span> building solutions across the <span class="font-extrabold text-blue-200">entire
+                  technology</span> stack. Currently expanding from <span class="font-extrabold text-blue-200">full-stack</span>
+                  development into electronics and bare-metal programming while
+                  creating <span class="font-extrabold text-blue-200">indie games</span> and robotics projects.
+                </p>
+                <div class="mt-6">
+                    <a href="#" class="btn-text px-6 py-2.5 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-gray-600/20 rounded-lg hover:bg-gray-500/40 lg:mx-0 lg:w-auto focus:outline-none">Hire Me Now!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
+            <img class="object-cover w-full h-full max-w-2xl rounded-md" src="~/assets/images/mainIconsdark.svg" alt="">
+        </div>
+    </div>
+</header>
 </template>
 
 <style scoped>

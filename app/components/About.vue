@@ -1,6 +1,6 @@
 <template>
   <!-- Icon Blocks -->
-  <div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-10">
+  <div class="max-w-340 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Grid -->
     <div class="grid md:grid-cols-2 gap-12">
       <div class="lg:w-3/4">
@@ -26,7 +26,7 @@
         <p class="mt-5">
           <a
             class="contact-me-text border-b-2 border-dashed hover:border-white hover:border-solid inline-flex items-center gap-x-1 text-sm text-white decoration-2 focus:outline-hidden font-medium"
-            href="#"
+            href="#contact"
           >
             Contact me to learn more
             <svg

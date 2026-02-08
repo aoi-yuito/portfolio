@@ -2,9 +2,9 @@
   <!-- ========== FOOTER ========== -->
   <div class="relative">
     <footer
-      class="relative z-10 mt-80 -mb-160 w-full max-w-340 py-10 px-4 sm:px-6 lg:px-8 mx-auto"
+      class="relative z-10 mt-80 -mb-230 w-full max-w-340 py-10 px-4 sm:px-6 lg:px-8 mx-auto"
     >
-      <DiscoBall class="-mt-96" />
+      <DiscoBall class="-mt-136" />
       <!-- Grid -->
       <div class="text-center">
         <div>
@@ -19,7 +19,7 @@
             you. Let's create
             <span class="text-blue-200">something amazing together</span>.
           </p>
-          <p class="mt-6 text-gray-400/80">© {{ currentYear }} @aoi yuito.</p>
+          <p class="mt-6 text-gray-400/80">© 2019 - {{ currentYear }} <span class="font-extrabold text-blue-200">@yuito2k</span>.</p>
         </div>
 
         <!-- Social Brands -->
@@ -45,7 +45,7 @@
           </a>
           <a
             class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-            href="https://x.com/aoi__yuito"
+            href="https://x.com/yuito2k"
             target="_blank"
           >
             <svg
@@ -63,7 +63,7 @@
           </a>
           <a
             class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-            href="https://github.com/aoi-yuito"
+            href="https://github.com/yuito2k"
             target="_blank"
           >
             <svg

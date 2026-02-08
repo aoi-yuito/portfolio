@@ -11,7 +11,7 @@
     </ClientOnly>
   </section>
 
-  <section class="-mt-36 -mb-32">
+  <section class="-mt-50 -mb-40">
     <ClientOnly>
       <Spiral />
     </ClientOnly>

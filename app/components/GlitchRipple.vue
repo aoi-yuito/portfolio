@@ -8,7 +8,7 @@
             <a
               class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
-              href="https://github.com/aoi-yuito/Solaris_Rewrite_V2"
+              href="https://github.com/yuito2k/Solaris_Rewrite_V2"
               aria-label="Solaris — A rewritten version of Discord Bot"
               >Solaris — A rewritten Discord Bot developed by @parafoxia</a
             >
@@ -17,7 +17,7 @@
             <a
               class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
-              href="https://github.com/aoi-yuito/paleocene"
+              href="https://github.com/yuito2k/paleocene"
               aria-label="Paleocene — A interactive paleo learning application"
               >Paleocene — An interactive paleo learning application</a
             >
@@ -26,7 +26,7 @@
             <a
               class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
-              href="https://github.com/aoi-yuito/bitBrigade"
+              href="https://github.com/yuito2k/bitBrigade"
               aria-label="bitBrigade — An interactive online learning web application"
               >bitBrigade — An interactive online learning web application</a
             >
@@ -53,7 +53,7 @@
             <a
               class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
-              href="https://github.com/aoi-yuito/apollo-obsidian"
+              href="https://github.com/yuito2k/apollo-obsidian"
               aria-label="Apollo Obsidian — Same Discord Bot but rewritten in Rust"
               >Apollo Obsidian — Same Discord Bot but rewritten in Rust</a
             >
@@ -62,7 +62,7 @@
             <a
               class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
-              href="https://github.com/aoi-yuito/Chat_Exporter"
+              href="https://github.com/yuito2k/Chat_Exporter"
               aria-label="Chat Exporter — A simple Discord chat exporter written in Python"
               >Chat Exporter — A simple Discord chat exporter written in
               Python</a
@@ -72,9 +72,18 @@
             <a
               class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
-              href="#"
+              href="https://github.com/yuito2k/cosmic_canvas"
               aria-label="Cosmic Canvas — An interactive next gen chrome home page"
               >Cosmic Canvas — An interactive next gen chrome home page</a
+            >
+          </li>
+          <li>
+            <a
+              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              target="blank"
+              href="https://github.com/yuito2k/vault.nvim"
+              aria-label="vault.nvim — An interactive database query handler for neovim"
+              >vault.nvim — An interactive database query handler for neovim</a
             >
           </li>
           <li>
