@@ -2,9 +2,9 @@
   <!-- ========== FOOTER ========== -->
   <div class="relative">
     <footer
-      class="relative z-10 mt-80 -mb-230 w-full max-w-340 py-10 px-4 sm:px-6 lg:px-8 mx-auto"
+      class="relative -mb-290 z-10 mt-80 w-full max-w-340 py-10 px-4 sm:px-6 lg:px-8 mx-auto"
     >
-      <DiscoBall class="-mt-136" />
+      <DiscoBall class="-mt-110" />
       <!-- Grid -->
       <div class="text-center">
         <div>
@@ -110,7 +110,7 @@
     </footer>
     <!-- ========== END FOOTER ========== -->
 
-    <canvas class="p-canvas-webgl" id="canvas-webgl"> </canvas>
+    <canvas class="mt-126 md:mt-106 lg:mt-106 xl:mt-66 p-canvas-webgl" id="canvas-webgl"> </canvas>
   </div>
 </template>
 
