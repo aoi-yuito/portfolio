@@ -1,7 +1,7 @@
 <template>
   <div class="glitch-main">
     <main id="main">
-      <article class="ct text-[10.5px]">
+      <article class="ct text-[10px]">
         <ul class="pt">
           <!-- NOTE: make sure to have aria-label on your link to preserve accessibility on text while hovering -->
           <li>
