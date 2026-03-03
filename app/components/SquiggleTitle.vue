@@ -71,6 +71,7 @@ const props = defineProps({
   font-family: "Chango", sans-serif;
 
   font-size: 1.875rem; /* Equivalent to 30px */
+  /*font-size: clamp(1.25rem, 5vw, 1.875rem);*/
   line-height: 2.25rem; /* Equivalent to 36px */
 
   font-weight: 600;
@@ -103,4 +104,3 @@ const props = defineProps({
   }
 }
 </style>
-

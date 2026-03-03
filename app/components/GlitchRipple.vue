@@ -1,12 +1,12 @@
 <template>
   <div class="glitch-main">
     <main id="main">
-      <article class="ct text-[10px]">
+      <article class="ct text-xs md:text-lg lg:text-2xl xl:text-3xl">
         <ul class="pt">
           <!-- NOTE: make sure to have aria-label on your link to preserve accessibility on text while hovering -->
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/yuito2k/Solaris_Rewrite_V2"
               aria-label="Solaris — A rewritten version of Discord Bot"
@@ -15,7 +15,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/yuito2k/paleocene"
               aria-label="Paleocene — A interactive paleo learning application"
@@ -24,7 +24,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/yuito2k/bitBrigade"
               aria-label="bitBrigade — An interactive online learning web application"
@@ -33,7 +33,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="#"
               aria-label="omniSynq — A B2B SAAS to automate common business issues"
@@ -42,7 +42,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/aoi-yuito/apollo-cyclops"
               aria-label="Apollo Cyclops — A heavy duty Discord Bot written in Python"
@@ -51,7 +51,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/yuito2k/apollo-obsidian"
               aria-label="Apollo Obsidian — Same Discord Bot but rewritten in Rust"
@@ -60,7 +60,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/yuito2k/Chat_Exporter"
               aria-label="Chat Exporter — A simple Discord chat exporter written in Python"
@@ -70,7 +70,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/yuito2k/cosmic_canvas"
               aria-label="Cosmic Canvas — An interactive next gen chrome home page"
@@ -79,7 +79,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="https://github.com/yuito2k/vault.nvim"
               aria-label="vault.nvim — An interactive database query handler for neovim"
@@ -88,7 +88,7 @@
           </li>
           <li>
             <a
-              class="glitch-text sm:text-md md:text-lg lg:text-lg xl:text-lg border-b-2 border-dashed hover:border-white hover:border-solid"
+              class="glitch-text border-b-2 border-dashed hover:border-white hover:border-solid"
               target="blank"
               href="#"
               aria-label="A mysterious project about B2B SAAS again is coming soon..."
@@ -114,7 +114,7 @@
 }
 
 .glitch-main {
-  background: #101010;
+  background: transparent;
   font-family:
     14px/1.45 "Chango",
     monospace;
@@ -478,4 +478,3 @@ onNuxtReady(() => {
   initASCIIShift();
 });
 </script>
-

@@ -2,9 +2,9 @@
   <!-- ========== FOOTER ========== -->
   <div class="relative">
     <footer
-      class="relative -mb-290 z-10 mt-80 w-full max-w-340 py-10 px-4 sm:px-6 lg:px-8 mx-auto"
+      class="relative -mb-290 w-full max-w-340 py-10 px-4 sm:px-6 lg:px-8 mx-auto"
     >
-      <DiscoBall class="-mt-110" />
+      <!-- <DiscoBall class="-mt-110" /> -->
       <!-- Grid -->
       <div class="text-center">
         <div>
@@ -19,7 +19,10 @@
             you. Let's create
             <span class="text-blue-200">something amazing together</span>.
           </p>
-          <p class="mt-6 text-gray-400/80">© 2019 - {{ currentYear }} <span class="font-extrabold text-blue-200">@yuito2k</span>.</p>
+          <p class="mt-6 text-gray-400/80">
+            © 2019 - {{ currentYear }}
+            <span class="font-extrabold text-blue-200">@yuito2k</span>.
+          </p>
         </div>
 
         <!-- Social Brands -->
@@ -110,13 +113,14 @@
     </footer>
     <!-- ========== END FOOTER ========== -->
 
-    <canvas class="mt-126 md:mt-106 lg:mt-106 xl:mt-66 p-canvas-webgl" id="canvas-webgl"> </canvas>
+    <!--<canvas class="fixed inset-x-0 bottom-0 p-canvas-webgl" id="canvas-webgl">
+</canvas>-->
   </div>
 </template>
 
 <style scoped>
 .p-canvas-webgl {
-  z-index: 0;
+  z-index: -1;
 }
 
 .footer-description {
@@ -221,4 +225,3 @@ onNuxtReady(() => {
   init();
 });
 </script>
-

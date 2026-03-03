@@ -11,11 +11,11 @@
     </ClientOnly>
   </section>
 
-  <section class="-mt-50 hidden md:block lg:block xl:block -mb-40">
+  <!-- <section class="-mt-50 hidden md:block lg:block xl:block -mb-40">
     <ClientOnly>
       <Spiral />
     </ClientOnly>
-  </section>
+  </section> -->
 
   <section class="mainSection" id="projects">
     <ClientOnly>
@@ -142,4 +142,3 @@
   }
 }
 </style>
-

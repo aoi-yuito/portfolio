@@ -4,9 +4,11 @@
     <!-- Grid -->
     <div class="grid md:grid-cols-2 gap-12">
       <div class="lg:w-3/4">
-        <!-- <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
-        Collaborative tools to design better user experience
-      </h2> -->
+        <!-- <h2
+          class="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white"
+        >
+          Collaborative tools to design better user experience
+</h2> -->
         <SquiggleTitle title="Versatile Problem Solver" />
         <p
           class="about-para font-bold mt-3 text-gray-800 dark:text-neutral-400"
@@ -53,10 +55,10 @@
         <div class="flex gap-x-5 sm:gap-x-8">
           <!-- Icon -->
           <span
-            class="shrink-0 inline-flex justify-center items-center size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+            class="shrink-0 inline-flex justify-center items-center size-7 md:size-11 lg:size-11 xl:size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
           >
             <svg
-              class="shrink-0 size-5"
+              class="shrink-0 size-3.5 md:size-5 lg:size-5 xl:size-5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -91,10 +93,10 @@
         <div class="flex gap-x-5 sm:gap-x-8">
           <!-- Icon -->
           <span
-            class="shrink-0 inline-flex justify-center items-center size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+            class="shrink-0 inline-flex justify-center items-center size-7 md:size-11 lg:size-11 xl:size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
           >
             <svg
-              class="shrink-0 size-5"
+              class="shrink-0 size-3.5 md:size-5 lg:size-5 xl:size-5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -127,10 +129,10 @@
         <div class="flex gap-x-5 sm:gap-x-8">
           <!-- Icon -->
           <span
-            class="shrink-0 inline-flex justify-center items-center size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+            class="shrink-0 inline-flex justify-center items-center size-7 md:size-11 lg:size-11 xl:size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
           >
             <svg
-              class="shrink-0 size-5"
+              class="shrink-0 size-3.5 md:size-5 lg:size-5 xl:size-5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -167,10 +169,10 @@
         <div class="flex gap-x-5 sm:gap-x-8">
           <!-- Icon -->
           <span
-            class="shrink-0 inline-flex justify-center items-center size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
+            class="shrink-0 inline-flex justify-center items-center size-7 md:size-11 lg:size-11 xl:size-11 rounded-full border border-gray-200 bg-white text-gray-800 shadow-2xs mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200"
           >
             <svg
-              class="shrink-0 size-5"
+              class="shrink-0 size-3.5 md:size-5 lg:size-5 xl:size-5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -217,4 +219,3 @@
   font-family: "Chango", sans-serif;
 }
 </style>
-
